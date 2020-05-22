@@ -1,0 +1,28 @@
+{
+  "name": "@arthur791004/proxy-server",
+  "version": "1.0.0",
+  "description": "Make life easier to develop micro services in local",
+  "main": "index.js",
+  "bin": "./bin/proxy-server.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arthur791004/proxy-server.git"
+  },
+  "author": "Arthur <arthur791004@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node bin/proxy-server.js",
+    "release": "yarn publish --access public"
+  },
+  "dependencies": {
+    "express": "4.17.1",
+    "http-proxy-middleware": "1.0.4"
+  },
+  "engines": {
+    "node": ">= 8"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "trailingComma": "es5"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "port": 3000,
+  "proxy": {
+    "/api": {
+      "target": "http://localhost",
+      "pathRewrite": {
+        "^/api/greyworm/coupons": "/needle/v1/coupons",
+        "^/api/greyworm/v2/coupons": "/needle/v2/coupons"
+      }
+    },
+    "/": "http://localhost:1234"
+  }
+}
